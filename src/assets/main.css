@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: "Nunito", serif;
+  background-color: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1280px;
+  max-width: 1280px;
+  margin: auto;
+}
+.sub-title {
+  font-family: "Crafty Girls", cursive;
+  font-weight: 500;
+  font-size: 25px;
+  color: #113d48;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #113d48;
+  line-height: 55px;
+}
+:root {
+  --primary-color: #1ca8cb;
+}
