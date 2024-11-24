@@ -4,6 +4,8 @@ import NewsPage from "./NewsPage.vue";
 import ContactPage from "./ContactPage.vue";
 import ServicePage from "./ServicePage.vue";
 import DestinationPage from "./DestinationPage.vue";
+import MyAccountPage from "./MyAccount.vue";
+import ForgotPasswordPage from "./ForgotPassword.vue";
 
 export {
   HomePage,
@@ -12,4 +14,6 @@ export {
   NewsPage,
   ServicePage,
   DestinationPage,
+  MyAccountPage,
+  ForgotPasswordPage,
 };

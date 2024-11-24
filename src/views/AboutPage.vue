@@ -185,6 +185,12 @@ button::before {
     transform: translateX(30px);
   }
 }
+.guide .item:hover .avt img {
+  transform: scale(1.1);
+}
+.guide .item:hover .bg > img {
+  transform: scale(1.1);
+}
 .guide .item {
   border-radius: 30px;
   background-color: #e9f6f9;
@@ -202,9 +208,11 @@ button::before {
 }
 .guide .item .avt img {
   @apply w-full h-full object-cover object-center;
+  transition: transform 0.6s ease-in-out;
 }
 .guide .item .bg > img {
   @apply w-full h-[200px] object-cover object-center;
+  transition: transform 0.6s ease-in-out;
 }
 .guide .info {
   background-color: #fff;
@@ -231,15 +239,15 @@ button::before {
   @apply text-sm inline-block w-[33px] h-[33px] flex items-center justify-center cursor-pointer;
   transition: 0.5s ease-in-out;
 }
-.guide .info:hover {
+.guide .item:hover .info {
   background-color: #25b3d6;
 }
-.guide .info:hover .name,
-.guide .info:hover .job {
+.guide .item:hover .name,
+.guide .item:hover .job {
   color: #fff;
   opacity: 1;
 }
-.guide .info:hover .social i {
+.guide .item:hover .social i {
   color: #fff;
 
   border: 1px solid #fff;

@@ -29,6 +29,10 @@ body {
   color: #113d48;
   line-height: 55px;
 }
+ul,
+li {
+  list-style: none;
+}
 :root {
   --primary-color: #1ca8cb;
 }

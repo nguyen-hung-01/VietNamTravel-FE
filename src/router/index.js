@@ -6,6 +6,8 @@ import {
   NewsPage,
   ServicePage,
   DestinationPage,
+  MyAccountPage,
+  ForgotPasswordPage,
 } from "@/views/index.js";
 
 const router = createRouter({
@@ -40,6 +42,16 @@ const router = createRouter({
       path: "/destination",
       name: "destination",
       component: DestinationPage,
+    },
+    {
+      path: "/my-account",
+      name: "my-account",
+      component: MyAccountPage,
+    },
+    {
+      path: "/forgot-password",
+      name: "forgot-password",
+      component: ForgotPasswordPage,
     },
   ],
 });
