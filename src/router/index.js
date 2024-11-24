@@ -8,6 +8,7 @@ import {
   DestinationPage,
   MyAccountPage,
   ForgotPasswordPage,
+  NotFoundPage,
 } from "@/views/index.js";
 
 const router = createRouter({
@@ -52,6 +53,11 @@ const router = createRouter({
       path: "/forgot-password",
       name: "forgot-password",
       component: ForgotPasswordPage,
+    },
+    {
+      path: "/:catchAll(.*)",
+      name: "NotFound",
+      component: NotFoundPage,
     },
   ],
 });
